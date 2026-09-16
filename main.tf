@@ -29,7 +29,6 @@ module "vpc" {
   }
 }
 
-
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
   version = "~> 21.0"
@@ -61,7 +60,6 @@ module "eks" {
     Terraform   = "true"
   }
 }
-
 
 resource "aws_ecr_repository" "app" {
   name                 = var.ecr_repository_name
