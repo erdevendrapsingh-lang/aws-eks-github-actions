@@ -73,6 +73,4 @@ resource "aws_ecr_repository" "app" {
     Project   = "aws-eks-github-actions"
     Terraform = "true"
   }
-}
-
-  
+}  
